@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|c:\\users\\dineshkumar\\downloads\\emicalculator\\emicalcualtor\\services\\emicalculatordataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|solutionrelative:services\\emicalculatordataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|c:\\users\\dineshkumar\\downloads\\emicalculator\\emicalcualtor\\controllers\\emicalculatordatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|solutionrelative:controllers\\emicalculatordatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|c:\\users\\dineshkumar\\downloads\\emicalculator\\emicalcualtor\\models\\emicalculatordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|solutionrelative:models\\emicalculatordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|c:\\users\\dineshkumar\\downloads\\emicalculator\\emicalcualtor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|c:\\users\\dineshkumar\\downloads\\emicalculator\\emicalcualtor\\request models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|solutionrelative:request models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|c:\\users\\dineshkumar\\downloads\\emicalculator\\emicalcualtor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|c:\\users\\dineshkumar\\downloads\\emicalculator\\emicalcualtor\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{96450979-5AAE-451C-85BA-A656C8FC24BB}|EmiCalculator.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmiCalculatorDataController.cs",
+              "DocumentMoniker": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Controllers\\EmiCalculatorDataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmiCalculatorDataController.cs",
+              "ToolTip": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Controllers\\EmiCalculatorDataController.cs",
+              "RelativeToolTip": "Controllers\\EmiCalculatorDataController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAIA2wDYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T05:41:28.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmiCalculatorDataService.cs",
+              "DocumentMoniker": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Services\\EmiCalculatorDataService.cs",
+              "RelativeDocumentMoniker": "Services\\EmiCalculatorDataService.cs",
+              "ToolTip": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Services\\EmiCalculatorDataService.cs",
+              "RelativeToolTip": "Services\\EmiCalculatorDataService.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAYwDIAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T04:50:19.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Request Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Request Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Request Models\\LoginRequest.cs",
+              "RelativeToolTip": "Request Models\\LoginRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T04:50:06.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmiCalculatorData.cs",
+              "DocumentMoniker": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Models\\EmiCalculatorData.cs",
+              "RelativeDocumentMoniker": "Models\\EmiCalculatorData.cs",
+              "ToolTip": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Models\\EmiCalculatorData.cs",
+              "RelativeToolTip": "Models\\EmiCalculatorData.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T04:49:32.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-06T10:25:15.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAcwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:38:41.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-06T10:24:09.604Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 138,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

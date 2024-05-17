@@ -6,6 +6,8 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
+using Newtonsoft.Json;
+
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -44,13 +46,13 @@ namespace EmiCalculator.Controllers
         }
         [AllowAnonymous] // Allows anonymous access
         // GET api/<EmiCalculatorDataController>/5
-        [HttpGet("{id}")]
-        public async Task<object> Get(string id)
+        [HttpGet("{userId}")]
+        public async Task<object> Get(string userId)
         {
             try
             {
                 // Fetches  EMI calculator Single Row Data asynchronously
-                var EmiCalculatorDatas = await FetchEmiCalculatorSingleRowDataAsync(id);
+                var EmiCalculatorDatas = await FetchEmiCalculatorSingleRowDataAsync(userId);
                 return EmiCalculatorDatas;
             }
             catch (Exception ex)
@@ -108,7 +110,7 @@ namespace EmiCalculator.Controllers
             var service = await loginAsync() as SheetsService; // Cast to SheetsService
 
             // Define the range of data to retrieve from the spreadsheet
-            string range = "EmiCalculatorData!A2:F";
+            string range = "EmiCalculatorData!A2:H";
 
             // Create a request to get values from the specified range
             SpreadsheetsResource.ValuesResource.GetRequest request =
@@ -126,18 +128,17 @@ namespace EmiCalculator.Controllers
 
         // This method fetches a single row of data from the "EmiCalculatorData" spreadsheet asynchronously based on the provided ID.
         // It returns a list representing the row of data if found, otherwise returns null.
-        private async Task<IList<object>> FetchEmiCalculatorSingleRowDataAsync(string id)
+        private async Task<IList<object>> FetchEmiCalculatorSingleRowDataAsync(string userId)
         {
             // Authenticate and get access to the Google Sheets service
             var service = await loginAsync() as SheetsService; // Cast to SheetsService
 
             // Define the spreadsheet ID and the range of data to retrieve
             string spreadsheetId = "1KBDswjeTiT5-q0YbpCFngOLrLz4my87XfKSOXmYy_wc";
-            string range = "EmiCalculatorData!A2:F";
+            string range = "EmiCalculatorData!A2:H";
 
             // Create a request to get values from the specified range
-            SpreadsheetsResource.ValuesResource.GetRequest request =
-                service.Spreadsheets.Values.Get(spreadsheetId, range);
+            SpreadsheetsResource.ValuesResource.GetRequest request = service.Spreadsheets.Values.Get(spreadsheetId, range);
 
             // Execute the request asynchronously and get the response
             ValueRange response = await request.ExecuteAsync();
@@ -148,24 +149,41 @@ namespace EmiCalculator.Controllers
             // If values were retrieved and the list is not empty
             if (values != null && values.Count > 0)
             {
-                int rowIndex = -1;
+                List<object> jsonList = new List<object>();
+
                 // Iterate through each row of data
-                for (int i = 0; i < values.Count; i++)
+                foreach (var rowData in values)
                 {
-                    // Check if the first column of the current row matches the provided ID
-                    if (values[i].Count > 0 && values[i][0].ToString() == id.ToString())
+                    // Check if the row has data and matches the provided user ID
+                    if (rowData.Count >= 8 && rowData[1]?.ToString() == userId)
                     {
-                        // If a match is found, set the rowIndex and return the row of data
-                        rowIndex = i + 1;
-                        return values[i];
-                        break; // Exit the loop since the desired row is found
+                        // If a match is found, construct the JSON object
+                        var jsonObject = new
+                        {
+                            Id = rowData[0]?.ToString(),
+                            UserId = rowData[1]?.ToString(),
+                            LoanAmount = rowData[2]?.ToString(),
+                            InterestRate = rowData[3]?.ToString(),
+                            LoanTermMonths = rowData[4]?.ToString(),
+                            LoanType = rowData[5]?.ToString(),
+                            TileColor = rowData[6]?.ToString(),
+                            CreatedAt = rowData[7]?.ToString()
+                        };
+
+                        // Add the JSON object to the list
+                        jsonList.Add(jsonObject);
                     }
                 }
+
+                // Return the list if any matching rows are found
+                if (jsonList.Count > 0)
+                    return jsonList;
             }
 
             // Return null if the row with the provided ID is not found
             return null;
         }
+
 
         private async Task<object> PostEmiCalculatorSingleRowDataAsync(EmiCalculatorData EmiCalculatorFormData)
         {
@@ -174,13 +192,20 @@ namespace EmiCalculator.Controllers
 
             // Define the spreadsheet ID and the range of data to retrieve
             string spreadsheetId = "1KBDswjeTiT5-q0YbpCFngOLrLz4my87XfKSOXmYy_wc";
-            string range = "EmiCalculatorData!A:F";
-
-            // Define the range where you want to append the data
-            
+            string range = "EmiCalculatorData!A:H";
 
             // Define the new row data
-            IList<object> newRowData = new List<object>() {EmiCalculatorFormData};
+            var newRowData = new List<object>
+    {
+        EmiCalculatorFormData.Id,
+        EmiCalculatorFormData.UserId,
+        EmiCalculatorFormData.LoanAmount,
+        EmiCalculatorFormData.InterestRate,
+        EmiCalculatorFormData.LoanTermMonths,
+        EmiCalculatorFormData.LoanType,
+        EmiCalculatorFormData.TileColor,
+        EmiCalculatorFormData.CreatedAt.ToString("yyyy-MM-dd H:mm:ss")
+    };
 
             // Create the value range object
             ValueRange valueRange = new ValueRange();
@@ -196,9 +221,8 @@ namespace EmiCalculator.Controllers
 
             // Output the result
             return appendResponse.Updates.UpdatedRows;
-
-           
         }
+
         // This method handles the authentication process to authorize access to Google Sheets.
         // It returns the SheetsService object after successful authorization.
         private async Task<object> loginAsync()

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmiCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfdd87af2fdce4ff06cbafba528dfa2f3a988dea")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmiCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmiCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

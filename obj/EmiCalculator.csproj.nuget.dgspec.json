@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj": {}
+    "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj": {}
   },
   "projects": {
-    "D:\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj": {
+    "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj",
         "projectName": "EmiCalculator",
-        "projectPath": "D:\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj",
+        "projectPath": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\EmiCalculator.csproj",
         "packagesPath": "C:\\Users\\DineshKumar\\.nuget\\packages\\",
-        "outputPath": "D:\\EmiCalculator\\EmiCalcualtor\\obj\\",
+        "outputPath": "C:\\Users\\DineshKumar\\Downloads\\EmiCalculator\\EmiCalcualtor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DineshKumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,7 +47,11 @@
           "dependencies": {
             "Google.Apis.Sheets.v4": {
               "target": "Package",
-              "version": "[1.67.0.3393, )"
+              "version": "[1.68.0.3407, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.3.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -70,6 +74,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.20.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
